@@ -49,8 +49,13 @@
 		if ( (varName == "contact_email_address_so") && (var_list[varName]) ) { 
 			contactEmailAddress = var_list[varName]; 
 		}
-		if ( varName == "requestor_name" ) { requestorName = var_list[varName]; }  
-	}
+		if ( (varName == "requestor_name") && (var_list[varName]) ) {
+			requestorName = var_list[varName];
+		}  
+		if ( (varName == "requestor_name_so") && (var_list[varName]) ) { // so - Support Office (employee)
+			requestorName = var_list[varName];
+		}    
+	} // End of for loop
 
 	// Get Requestor email address for sys_user table
 	var userGr = new GlideRecord('sys_user');
@@ -60,9 +65,11 @@
 		requestorEmailAddr = userGr.getValue('email');
 	}
 	
-
-	// Send Email via inserting event
-	gs.eventQueue('x_aupi_workjam.email_notif_ritm_opened',current,contactEmailAddress,requestorEmailAddr);
+	// Send email when Requestor's email address != Contact email address
+	if ( requestorEmailAddr != contactEmailAddress ) {
+		// Send Email via inserting event
+		gs.eventQueue('x_aupi_workjam.email_notif_ritm_opened',current,contactEmailAddress,requestorEmailAddr);
+	}
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -72,7 +79,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e5a886e8db21e510465908b4f396196d</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>WorkJam Request Item Opened</sys_name>
         <sys_overrides/>
         <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
@@ -81,7 +88,7 @@
         <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
         <sys_update_name>sys_script_e5a886e8db21e510465908b4f396196d</sys_update_name>
         <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
-        <sys_updated_on>2023-03-10 03:10:40</sys_updated_on>
+        <sys_updated_on>2023-03-14 03:34:40</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
