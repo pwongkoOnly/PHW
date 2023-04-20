@@ -40,7 +40,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>comments_additional_information</name>
-        <order>5000</order>
+        <order>2000</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -73,7 +73,7 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
-        <sys_created_on>2023-02-22 00:09:45</sys_created_on>
+        <sys_created_on>2023-02-22 00:12:11</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2c15231fdb4de110465908b4f3961910</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -83,8 +83,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
         <sys_update_name>item_option_new_2c15231fdb4de110465908b4f3961910</sys_update_name>
-        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
-        <sys_updated_on>2023-02-22 00:09:45</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-02-22 00:13:26</sys_updated_on>
         <table/>
         <tooltip/>
         <type>2</type>
