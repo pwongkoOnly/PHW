@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="WorkJam Knowledge Centre">94ed67d8db702d10465908b4f3961930</catalog_item>
+        <catalog_variable>IO:c46f275cdb702d10465908b4f39619df</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-01-31 07:01:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0f7033dcdb702d10465908b4f39619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>folder_document_no_longer_visible_if_known</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_0f7033dcdb702d10465908b4f39619c3</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-01-31 07:01:48</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Show Folder document no longer visible">4c603b5cdb702d10465908b4f396191a</ui_policy>
+        <variable>folder_document_no_longer_visible_if_known</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>workjam_close_ritm_and_sctask</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>WorkJam Close RITM and SCTASK</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-07 01:45:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>b04b6aea8730ed10a50e74497bbb359a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WorkJam Close RITM and SCTASK</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>sys_hub_flow_b04b6aea8730ed10a50e74497bbb359a</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-07 01:45:32</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b04b6aea8730ed10a50e74497bbb359a^sys_idNOT INbc4b6aea8730ed10a50e74497bbb359a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b04b6aea8730ed10a50e74497bbb359a</id>
+        <name>WorkJam Close RITM and SCTASK</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-07 01:45:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bc4b6aea8730ed10a50e74497bbb359a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-07 01:45:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=bc4b6aea8730ed10a50e74497bbb359a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b04b6aea8730ed10a50e74497bbb359a"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b04b6aea8730ed10a50e74497bbb359a"/>
+</record_update>
