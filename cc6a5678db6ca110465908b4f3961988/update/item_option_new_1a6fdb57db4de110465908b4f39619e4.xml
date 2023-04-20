@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Copy of WorkJam Login">b96f9f17db4de110465908b4f396195d</cat_item>
+        <cat_item display_value="WorkJam New User Request (external)">b96f9f17db4de110465908b4f396195d</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -73,7 +73,7 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
-        <sys_created_on>2023-02-21 23:44:31</sys_created_on>
+        <sys_created_on>2023-02-22 00:12:11</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1a6fdb57db4de110465908b4f39619e4</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -83,8 +83,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
         <sys_update_name>item_option_new_1a6fdb57db4de110465908b4f39619e4</sys_update_name>
-        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
-        <sys_updated_on>2023-02-21 23:44:31</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-02-22 00:13:21</sys_updated_on>
         <table/>
         <tooltip/>
         <type>20</type>

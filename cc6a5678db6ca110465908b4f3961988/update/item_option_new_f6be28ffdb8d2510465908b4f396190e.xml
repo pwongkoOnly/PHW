@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Copy of WorkJam User Profile Change (external)">29be247fdb8d2510465908b4f396195e</cat_item>
+        <cat_item display_value="WorkJam User Profile Change (internal)">29be247fdb8d2510465908b4f396195e</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -40,7 +40,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>start_and_end_date</name>
-        <order>2000</order>
+        <order>3100</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -73,18 +73,18 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
-        <sys_created_on>2023-02-23 00:09:33</sys_created_on>
+        <sys_created_on>2023-02-23 01:02:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f6be28ffdb8d2510465908b4f396190e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Start and End Date</sys_name>
         <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
         <sys_update_name>item_option_new_f6be28ffdb8d2510465908b4f396190e</sys_update_name>
-        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
-        <sys_updated_on>2023-02-23 00:09:33</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-02-23 01:05:46</sys_updated_on>
         <table/>
         <tooltip/>
         <type>19</type>
