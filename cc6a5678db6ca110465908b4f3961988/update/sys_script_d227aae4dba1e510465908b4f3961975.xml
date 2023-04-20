@@ -22,7 +22,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>WorkJam Request Item Updated</name>
+        <name>ss</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
