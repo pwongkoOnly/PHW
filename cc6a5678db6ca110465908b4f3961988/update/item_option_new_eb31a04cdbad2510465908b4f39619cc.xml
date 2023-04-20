@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="WorkJam Location/Region Changes">8dce981bdb81e110465908b4f396197e</cat_item>
+        <cat_item display_value="WorkJam User Profile Change (external)">e02867dfdb4de110465908b4f39619e5</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -35,17 +35,17 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>formatter20</name>
-        <order>1000</order>
+        <name>contact_email_address</name>
+        <order>10</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text/>
+        <question_text>Contact Email Address</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -73,21 +73,21 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
-        <sys_created_on>2023-02-21 21:26:51</sys_created_on>
+        <sys_created_on>2023-03-08 04:08:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>f1ef7a97dbc9e110465908b4f39619d1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>formatter20</sys_name>
-        <sys_package/>
+        <sys_id>eb31a04cdbad2510465908b4f39619cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Contact Email Address</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
-        <sys_update_name>item_option_new_f1ef7a97dbc9e110465908b4f39619d1</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-02-21 21:31:03</sys_updated_on>
+        <sys_update_name>item_option_new_eb31a04cdbad2510465908b4f39619cc</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 04:08:00</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>20</type>
+        <type>6</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -103,22 +103,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=f1ef7a97dbc9e110465908b4f39619d1"/>
-    <fx_price action="delete_multiple" query="id=f1ef7a97dbc9e110465908b4f39619d1"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=eb31a04cdbad2510465908b4f39619cc"/>
+    <fx_price action="delete_multiple" query="id=eb31a04cdbad2510465908b4f39619cc"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="AUD">AUD</currency>
         <field>price_if_checked</field>
-        <id>f1ef7a97dbc9e110465908b4f39619d1</id>
+        <id>eb31a04cdbad2510465908b4f39619cc</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="AUD">AUD</reference_currency>
         <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
-        <sys_created_on>2023-02-21 21:26:51</sys_created_on>
-        <sys_id>f9ef7a97dbc9e110465908b4f39619d3</sys_id>
+        <sys_created_on>2023-03-08 04:08:00</sys_created_on>
+        <sys_id>56f1688cdbad2510465908b4f396192b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
-        <sys_updated_on>2023-02-21 21:26:51</sys_updated_on>
+        <sys_updated_on>2023-03-08 04:08:00</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -126,16 +126,16 @@
         <amount>0</amount>
         <currency display_value="AUD">AUD</currency>
         <field>rec_price_if_checked</field>
-        <id>f1ef7a97dbc9e110465908b4f39619d1</id>
+        <id>eb31a04cdbad2510465908b4f39619cc</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="AUD">AUD</reference_currency>
         <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
-        <sys_created_on>2023-02-21 21:26:51</sys_created_on>
-        <sys_id>71ef7a97dbc9e110465908b4f39619d3</sys_id>
+        <sys_created_on>2023-03-08 04:08:00</sys_created_on>
+        <sys_id>d6f1688cdbad2510465908b4f396192a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
-        <sys_updated_on>2023-02-21 21:26:51</sys_updated_on>
+        <sys_updated_on>2023-03-08 04:08:00</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
