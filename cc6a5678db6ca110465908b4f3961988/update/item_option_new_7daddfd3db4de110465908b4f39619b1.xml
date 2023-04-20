@@ -73,10 +73,10 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
-        <sys_created_on>2023-02-21 23:36:49</sys_created_on>
+        <sys_created_on>2023-03-08 02:35:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7daddfd3db4de110465908b4f39619b1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>formatter</sys_name>
         <sys_package/>
         <sys_policy/>
@@ -84,7 +84,7 @@
         <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
         <sys_update_name>item_option_new_7daddfd3db4de110465908b4f39619b1</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-02-21 23:38:22</sys_updated_on>
+        <sys_updated_on>2023-03-08 02:36:53</sys_updated_on>
         <table/>
         <tooltip/>
         <type>24</type>

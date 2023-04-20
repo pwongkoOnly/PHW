@@ -40,7 +40,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>requested_for_team_member_name</name>
-        <order>2000</order>
+        <order>2700</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -73,10 +73,10 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
-        <sys_created_on>2023-02-22 04:53:53</sys_created_on>
+        <sys_created_on>2023-03-08 03:30:33</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0fec58ab87416190a50e74497bbb35af</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Requested for - Team Member Name</sys_name>
         <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
         <sys_policy/>
@@ -84,7 +84,7 @@
         <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
         <sys_update_name>item_option_new_0fec58ab87416190a50e74497bbb35af</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-02-22 04:56:41</sys_updated_on>
+        <sys_updated_on>2023-03-08 03:36:05</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>
