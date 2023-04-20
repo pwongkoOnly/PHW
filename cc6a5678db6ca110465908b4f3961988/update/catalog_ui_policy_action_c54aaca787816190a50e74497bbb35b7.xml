@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="WorkJam New User Request (internal)">2eec58ab87416190a50e74497bbb3523</catalog_item>
+        <catalog_variable>IO:cfec58ab87416190a50e74497bbb35b7</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>300</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-22 05:12:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c54aaca787816190a50e74497bbb35b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>position_type</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_c54aaca787816190a50e74497bbb35b7</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-22 05:12:18</sys_updated_on>
+        <table/>
+        <ui_policy display_value="If Store is selected">91f964a787816190a50e74497bbb3507</ui_policy>
+        <variable>position_type</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>
