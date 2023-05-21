@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_aupi_workjam.WHCatalogUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>WHCatalogUtils</name>
+        <script><![CDATA[var WHCatalogUtils = Class.create();
+WHCatalogUtils.prototype = {
+    initialize: function() {
+    },
+	
+		
+	/***************************************/
+	validateCatItem: function (attchFilename, reqItemSysId, catItemName) {
+		
+		var result = true;
+		
+		// To prevent looping exchanges of attachments between RITM and SCTASK
+		var scTaskGr = new GlideRecord('sc_task');
+		scTaskGr.get('request_item', reqItemSysId);
+		if (attchFilename.indexOf(scTaskGr.getValue('number')) > -1) {
+			result = false; // Set to false when attachment is coming from SCTASK
+		}
+		
+		// Making sure the attachment is only processed in WorkJam Catalogue Item
+		var ritmGr = new GlideRecord('sc_req_item');
+		ritmGr.addQuery('sys_id', reqItemSysId);
+		ritmGr.addQuery('cat_item.name', 'CONTAINS', catItemName);
+		ritmGr.query();
+		if (!ritmGr.next()) {
+				result = false; // Set to false if it is not WorkJam Catalogue Item
+		}
+		return result;
+	}, /*** End of function validateCatItem ***/
+	
+	/***************************************/
+	validateCatItemFromSCTASK: function (attchFilename, scTaskSysId, catItemName) {
+		
+		var result     = true;
+		var ritmNumbe  = -1;
+		
+		// Making sure the attachment is only processed in WorkJam Catalogue Item
+		var scTaskGr = new GlideRecord('sc_task');
+		scTaskGr.get('sys_id', scTaskSysId);
+		
+		var ritmGr = new GlideRecord('sc_req_item');
+		ritmGr.addQuery('sys_id', scTaskGr.getValue('request_item'));
+		ritmGr.addQuery('cat_item.name', 'CONTAINS', catItemName);
+		ritmGr.query();
+		if (!ritmGr.next()) {
+			result = false; // Set to false if it is not WorkJam Catalogue Item
+		} 
+			
+		ritmNumber = (ritmGr) ? ritmGr.getValue('number') : -1;
+		
+		// To prevent looping exchanges of attachments between RITM and SCTASK
+		if (attchFilename.indexOf(ritmNumber) > -1) {
+			result = false; // Set to false when attachment is coming from SCTASK
+		}
+		
+		return result;
+	}, /*** End of function validateCatItemFromSCTASK ***/
+	
+	/***************************************/
+	copyAttchmtToSCTask: function (attchGr, reqItemSysId) {
+		
+		var ritmGr              = new GlideRecord('sc_req_item');
+		ritmGr.get('sys_id', reqItemSysId);
+		
+		var fileName             = attchGr.getValue('file_name');
+		var newFileName          = '[' + ritmGr.getValue('number') + '] ' + fileName;
+		var contentType          = attchGr.getValue('content_type');
+		var aGr                  = new GlideSysAttachment();
+		var base64EncodedContent = aGr.getContentBase64(attchGr);
+		
+		var sctaskGr = new GlideRecord('sc_task');
+		sctaskGr.addQuery('request_item', reqItemSysId);
+		sctaskGr.query();
+		while(sctaskGr.next()) {
+			var attachment = new GlideSysAttachment();
+			var agr = attachment.writeBase64(sctaskGr, newFileName, contentType, base64EncodedContent);
+		}
+	
+	}, /*** End of function copyAttchmtToSCTask ***/
+	
+	/***************************************/
+	copyAttchmtToRITM: function (attchGr, reqItemSysId) {
+		
+		var scTaskGr             = new GlideRecord('sc_task');
+		scTaskGr.get('request_item', reqItemSysId);
+		
+		var fileName             = attchGr.getValue('file_name');
+		var newFileName          = '[' + scTaskGr.getValue('number') + '] ' + fileName;
+		var contentType          = attchGr.getValue('content_type');
+		var aGr                  = new GlideSysAttachment();
+		var base64EncodedContent = aGr.getContentBase64(attchGr);
+		
+		var ritmGr = new GlideRecord('sc_req_item');
+		ritmGr.addQuery('sys_id', reqItemSysId);
+		ritmGr.query();
+		if (ritmGr.next()) {
+			var attachment = new GlideSysAttachment();
+			var agr = attachment.writeBase64(ritmGr, newFileName, contentType, base64EncodedContent);
+		}
+	
+	}, /*** End of function copyAttchmtToRITM ***/
+
+    type: 'WHCatalogUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-05-20 00:17:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7459af138772e110a50e74497bbb35c0</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>WHCatalogUtils</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>sys_script_include_7459af138772e110a50e74497bbb35c0</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-05-20 02:12:56</sys_updated_on>
+    </sys_script_include>
+</record_update>
