@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
     <sc_cat_item action="INSERT_OR_UPDATE">
         <access_type>restricted</access_type>
-        <active>true</active>
+        <active>false</active>
         <availability>on_both</availability>
         <billable>false</billable>
         <category display_value="WorkJam">1daede3cdb6ca110465908b4f3961978</category>
@@ -64,7 +64,7 @@
         <sys_created_on>2023-02-25 04:34:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f37e3710db95e510465908b4f396197d</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>WorkJam Generic Request</sys_name>
         <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
         <sys_policy/>
@@ -72,7 +72,7 @@
         <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
         <sys_update_name>sc_cat_item_f37e3710db95e510465908b4f396197d</sys_update_name>
         <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
-        <sys_updated_on>2023-05-25 09:13:07</sys_updated_on>
+        <sys_updated_on>2023-05-25 09:25:02</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
