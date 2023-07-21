@@ -50,7 +50,7 @@
         <published_ref/>
         <recurring_frequency/>
         <request_method/>
-        <roles/>
+        <roles>snc_internal</roles>
         <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
@@ -64,7 +64,7 @@
         <sys_created_on>2023-02-25 04:34:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f37e3710db95e510465908b4f396197d</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>WorkJam Generic Request</sys_name>
         <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
         <sys_policy/>
@@ -72,7 +72,7 @@
         <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
         <sys_update_name>sc_cat_item_f37e3710db95e510465908b4f396197d</sys_update_name>
         <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
-        <sys_updated_on>2023-05-25 09:25:02</sys_updated_on>
+        <sys_updated_on>2023-07-20 23:58:04</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
