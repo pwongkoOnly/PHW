@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access>1</caller_access>
+        <description>Send Email Notficaiton for WorkJam related catalogue item forms</description>
+        <event_name>x_aupi_workjam.email_notif_ritm_opened</event_name>
+        <fired_by>Business Rule</fired_by>
+        <queue/>
+        <suffix>email_notif_ritm_opened</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-03-10 00:18:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6b3bf5ecdbeda510465908b4f39619d8</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>x_aupi_workjam.email_notif_ritm_opened</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>sysevent_register_6b3bf5ecdbeda510465908b4f39619d8</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-10 02:38:27</sys_updated_on>
+        <table>sc_req_item</table>
+    </sysevent_register>
+</record_update>

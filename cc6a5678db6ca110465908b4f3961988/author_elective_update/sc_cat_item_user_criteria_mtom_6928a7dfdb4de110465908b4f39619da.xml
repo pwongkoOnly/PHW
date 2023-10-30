@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="Copy of WorkJam New User Request (external)">e02867dfdb4de110465908b4f39619e5</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-22 00:22:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6928a7dfdb4de110465908b4f39619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of WorkJam New User Request (external).SNC External</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_6928a7dfdb4de110465908b4f39619da</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-22 00:22:42</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</application>
+        <file_path/>
+        <instance_id>969d0382db72fac00e785d00cf961913</instance_id>
+        <instance_name>apinet</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_6928a7dfdb4de110465908b4f39619da</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Copy of WorkJam New User Request (external)">e02867dfdb4de110465908b4f39619e5</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>Paulus.Wongko@api.net.au</sys_created_by><sys_created_on>2023-02-22 00:22:42</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>6928a7dfdb4de110465908b4f39619da</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Copy of WorkJam New User Request (external).SNC External</sys_name><sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_6928a7dfdb4de110465908b4f39619da</sys_update_name><sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by><sys_updated_on>2023-02-22 00:22:42</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>-1265601364</payload_hash>
+        <record_name>Copy of WorkJam New User Request (external).SNC External</record_name>
+        <reverted_from/>
+        <source>bb0b4a3987de61d051cdcae20cbb3541</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-04-20 05:04:26</sys_created_on>
+        <sys_id>a44bca7987de61d051cdcae20cbb354d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1879d0cae990000001</sys_recorded_at>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-04-20 05:04:56</sys_updated_on>
+        <type>Catalogue Item Available for</type>
+        <update_guid>ed28a7df0f4de11054f9f88152e1cadc</update_guid>
+        <update_guid_history>ed28a7df0f4de11054f9f88152e1cadc:-1265601364</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 20/04/2023 15:19:18">82ae8eb18712a1d051cdcae20cbb356f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-04-20 05:19:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>0ab28439a42e4d10a4f32de6736a3a40</sys_id>
+        <sys_metadata>6928a7dfdb4de110465908b4f39619da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of WorkJam New User Request (external).SNC External</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_scope_delete display_value="">1f311dcb338447a88b25137862d99590</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_6928a7dfdb4de110465908b4f39619da</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_6928a7dfdb4de110465908b4f39619da">a44bca7987de61d051cdcae20cbb354d</sys_update_version>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-04-20 05:19:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

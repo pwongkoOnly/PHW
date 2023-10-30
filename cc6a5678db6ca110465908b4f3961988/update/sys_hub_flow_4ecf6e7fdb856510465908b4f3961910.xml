@@ -1,0 +1,2323 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9aa3157bdb416510465908b4f39619b7</copied_from>
+        <copied_from_name>WorkJam User Profile Change (ext</copied_from_name>
+        <description/>
+        <internal_name>workjam_user_profile_change_internal</internal_name>
+        <label_cache>[{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_name_so.name","label":"1 - Get Catalog Variables➛requested_for_team_member_name_so➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.temporary_or_permanent_change","label":"1➛temporary_or_permanent_change","reference":"","reference_display":"temporary_or_permanent_change","type":"choice","base_type":"choice","choices":[{"label":"Temporary","value":"Temporary","order":100.0},{"label":"Permanent","value":"Permanent","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requestor_name","label":"1 - Get Catalog Variables➛requestor_name","reference":"","reference_display":"requestor_name","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for","label":"1 - Get Catalog Variables➛requested_for","reference":"","reference_display":"requested_for","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_work_location","label":"1 - Get Catalog Variables➛requested_for_work_location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_email","label":"1 - Get Catalog Variables➛requested_for_email","reference":"","reference_display":"requested_for_email","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.workjam_username","label":"1 - Get Catalog Variables➛workjam_username","reference":"","reference_display":"workjam_username","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.comment_additional_information","label":"1 - Get Catalog Variables➛comment_additional_information","reference":"","reference_display":"comment_additional_information","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.type_of_access_profile_issue","label":"1➛type_of_access_profile_issue","reference":"","reference_display":"type_of_access_profile_issue","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Unable to add/change position on user profile","value":"Unable to add/change position on user profile","order":100.0},{"label":"Other","value":"Other","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.current_position","label":"1➛current_position","reference":"","reference_display":"current_position","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.new_location","label":"1➛new_location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.new_position","label":"1➛new_position","reference":"","reference_display":"new_position","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.describe_access_profile_issue","label":"1➛describe_access_profile_issue","reference":"","reference_display":"describe_access_profile_issue","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task","label":"2 - Create Catalog Task➛Catalog Task","reference":"sc_task","reference_display":"Catalogue Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.__action_status__","label":"2 - Create Catalog Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.__dont_treat_as_error__","label":"2 - Create Catalog Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.type_of_user_profile_issue","label":"1 - Get Catalog Variables➛type_of_user_profile_issue","reference":"","reference_display":"type_of_user_profile_issue","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Unable to add/change position on user profile","value":"Unable to add/change position on user profile","order":100.0},{"label":"Add team member","value":"Add team member","order":100.0},{"label":"Other","value":"Other","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.describe_user_profile_issue","label":"1 - Get Catalog Variables➛describe_user_profile_issue","reference":"","reference_display":"describe_user_profile_issue","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.state","label":"2 - Create Catalog Task➛Catalog Task➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sc_task","column_name":"state","choices":[{"image":"","label":"Open","used":false,"reference":false,"rawLabel":"Open","selected":false,"missing":false,"value":"1","parameters":{"name":"sc_task"}},{"image":"","label":"Closed Complete","used":false,"reference":false,"rawLabel":"Closed Complete","selected":false,"missing":false,"value":"3","parameters":{"name":"sc_task"}},{"image":"","label":"Cancelled","used":false,"reference":false,"rawLabel":"Cancelled","selected":false,"missing":false,"value":"4","parameters":{"name":"sc_task"}},{"image":"","label":"Follow up","used":false,"reference":false,"rawLabel":"Follow up","selected":false,"missing":false,"value":"8","parameters":{"name":"sc_task"}}]},{"name":"a7d10c7f-2957-4f66-a4b4-55a7a40a2e93.record","label":"4 - Update Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a7d10c7f-2957-4f66-a4b4-55a7a40a2e93.table_name","label":"4 - Update Record➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a7d10c7f-2957-4f66-a4b4-55a7a40a2e93.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a7d10c7f-2957-4f66-a4b4-55a7a40a2e93.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.number","label":"2 - Create Catalog Task➛Catalog Task➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_task","column_name":"number"},{"name":"a9e87e9a-b9e5-4727-be66-125a13c5cc0b.record","label":"7 - Update Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9e87e9a-b9e5-4727-be66-125a13c5cc0b.table_name","label":"7 - Update Record➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9e87e9a-b9e5-4727-be66-125a13c5cc0b.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9e87e9a-b9e5-4727-be66-125a13c5cc0b.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9550580a-a4a4-4337-8b44-8bb2ddba8385.record","label":"4 - Update Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9550580a-a4a4-4337-8b44-8bb2ddba8385.table_name","label":"4 - Update Record➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9550580a-a4a4-4337-8b44-8bb2ddba8385.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9550580a-a4a4-4337-8b44-8bb2ddba8385.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.assignment_group.name","label":"2 - Create Catalog Task➛Catalog Task➛Assignment group➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user_group","column_name":"name"},{"name":"9e598d6e-079b-4cc4-8c48-8782164d75af.__action_status__","label":"4 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"9e598d6e-079b-4cc4-8c48-8782164d75af.__dont_treat_as_error__","label":"4 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_name","label":"1 - Get Catalog Variables➛requested_for_team_member_name","reference":"","reference_display":"requested_for_team_member_name","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_email_address","label":"1 - Get Catalog Variables➛requested_for_email_address","reference":"","reference_display":"requested_for_email_address","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_change","label":"1 - Get Catalog Variables➛requested_change","reference":"","reference_display":"requested_change","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Add Position","value":"Add Position","order":100.0},{"label":"Remove Position","value":"Remove Position","order":100.0},{"label":"Change Position","value":"Change Position","order":100.0},{"label":"Deactivate Profile","value":"Deactivate Profile","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.position_type","label":"1 - Get Catalog Variables➛position_type","reference":"","reference_display":"position_type","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.start_date","label":"1 - Get Catalog Variables➛start_date","reference":"","reference_display":"start_date","type":"glide_date","base_type":"glide_date","attributes":{"catalogType":"9","catalogTypeLabel":"Date"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.end_date_if_temporary_change","label":"1 - Get Catalog Variables➛end_date_if_temporary_change","reference":"","reference_display":"end_date_if_temporary_change","type":"glide_date","base_type":"glide_date","attributes":{"catalogType":"9","catalogTypeLabel":"Date"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.add_position","label":"1 - Get Catalog Variables➛add_position","reference":"","reference_display":"add_position","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Retail Manager","value":"Retail Manager","order":100.0},{"label":"Assistant Retail Manager","value":"Assistant Retail Manager","order":100.0},{"label":"Sales Assistant","value":"Sales Assistant","order":100.0},{"label":"Beauty Advisor","value":"Beauty Advisor","order":100.0},{"label":"Pharmacist","value":"Pharmacist","order":100.0},{"label":"Pharmacy Assistant","value":"Pharmacy Assistant","order":100.0},{"label":"Pharmacy Intern","value":"Pharmacy Intern","order":100.0},{"label":"Pharmacy Manager","value":"Pharmacy Manager","order":100.0},{"label":"Dispensary Technician","value":"Dispensary Technician","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.store_location","label":"1 - Get Catalog Variables➛store_location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.remove_position","label":"1 - Get Catalog Variables➛remove_position","reference":"","reference_display":"remove_position","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Retail Manager","value":"Retail Manager","order":100.0},{"label":"Assistant Retail Manager","value":"Assistant Retail Manager","order":100.0},{"label":"Sales Assistant","value":"Sales Assistant","order":100.0},{"label":"Beauty Advisor","value":"Beauty Advisor","order":100.0},{"label":"Pharmacist","value":"Pharmacist","order":100.0},{"label":"Pharmacy Assistant","value":"Pharmacy Assistant","order":100.0},{"label":"Pharmacy Intern","value":"Pharmacy Intern","order":100.0},{"label":"Pharmacy Manager","value":"Pharmacy Manager","order":100.0},{"label":"Dispensary Technician","value":"Dispensary Technician","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.reason_for_removing_position","label":"1 - Get Catalog Variables➛reason_for_removing_position","reference":"","reference_display":"reason_for_removing_position","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Christmas Casual","value":"Christmas Casual","order":100.0},{"label":"Contract Tenure End","value":"Contract Tenure End","order":100.0},{"label":"Dismissed","value":"Dismissed","order":100.0},{"label":"Long Term Leave","value":"Long Term Leave","order":100.0},{"label":"Parental Leave","value":"Parental Leave","order":100.0},{"label":"Position Change","value":"Position Change","order":100.0},{"label":"Resigned","value":"Resigned","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.store_location_remove_position","label":"1 - Get Catalog Variables➛store_location_remove_position","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.deactivation_date","label":"1 - Get Catalog Variables➛deactivation_date","reference":"","reference_display":"deactivation_date","type":"glide_date","base_type":"glide_date","attributes":{"catalogType":"9","catalogTypeLabel":"Date"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.reason_for_deactivation","label":"1 - Get Catalog Variables➛reason_for_deactivation","reference":"","reference_display":"reason_for_deactivation","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Christmas Casual","value":"Christmas Casual","order":100.0},{"label":"Contract Tenure End","value":"Contract Tenure End","order":100.0},{"label":"Dismissed","value":"Dismissed","order":100.0},{"label":"Long Term Leave","value":"Long Term Leave","order":100.0},{"label":"Parental Leave","value":"Parental Leave","order":100.0},{"label":"Resigned","value":"Resigned","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.comments_additional_information","label":"1 - Get Catalog Variables➛comments_additional_information","reference":"","reference_display":"comments_additional_information","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_location","label":"1 - Get Catalog Variables➛requested_for_location","reference":"","reference_display":"requested_for_location","type":"choice","base_type":"choice","choices":[{"label":"Support Office","value":"Support Office","order":100.0},{"label":"Store","value":"Store","order":100.0}],"attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requestor_name_so","label":"1 - Get Catalog Variables➛requestor_name_so","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_name_so","label":"1 - Get Catalog Variables➛requested_for_team_member_name_so","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_work_location_so","label":"1 - Get Catalog Variables➛requested_for_work_location_so","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_email_address_so","label":"1 - Get Catalog Variables➛requested_for_team_member_email_address_so","reference":"","reference_display":"requested_for_team_member_email_address_so","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.contact_email_address_so","label":"1 - Get Catalog Variables➛contact_email_address_so","reference":"","reference_display":"contact_email_address_so","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.contact_email_address","label":"1 - Get Catalog Variables➛contact_email_address","reference":"","reference_display":"contact_email_address","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}}]</label_cache>
+        <master_snapshot>fa80fabfdb856510465908b4f39619c4</master_snapshot>
+        <name>WorkJam User Profile Change (internal)</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>67803ebfdb856510465908b4f3961971</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>4ecf6e7fdb856510465908b4f3961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WorkJam User Profile Change (internal)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>sys_hub_flow_4ecf6e7fdb856510465908b4f3961910</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-04-20 05:11:34</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=4ecf6e7fdb856510465908b4f3961910"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <run_flow_in/>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>67803ebfdb856510465908b4f3961971</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:41:44</sys_updated_on>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=4ecf6e7fdb856510465908b4f3961910"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=4ecf6e7fdb856510465908b4f3961910^sys_idNOT IN26cf6e7fdb856510465908b4f3961966"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>26cf6e7fdb856510465908b4f3961966</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:27</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=26cf6e7fdb856510465908b4f3961966"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4ecf6e7fdb856510465908b4f3961910^sys_idNOT IN26cf6e7fdb856510465908b4f396197f,2acf6e7fdb856510465908b4f396197f,2ecf6e7fdb856510465908b4f396197f,6ecf6e7fdb856510465908b4f396197e,a6cf6e7fdb856510465908b4f396197f,aacf6e7fdb856510465908b4f396197f"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>1</component_indexes>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <label>Fulfillment</label>
+        <order>4</order>
+        <stage_id>e727e35f-7d93-4a92-b0f3-25afe9905d4a</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>26cf6e7fdb856510465908b4f396197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:25</sys_updated_on>
+        <type>standard</type>
+        <value>fulfillment</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <label>Waiting for Approval</label>
+        <order>3</order>
+        <stage_id>7a580329-9f25-4662-87d3-734de5570d42</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2acf6e7fdb856510465908b4f396197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:25</sys_updated_on>
+        <type>standard</type>
+        <value>waiting_for_approval</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <label>Delivery</label>
+        <order>5</order>
+        <stage_id>e07f0d40-26e9-4897-8851-8b1661be224d</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ecf6e7fdb856510465908b4f396197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:25</sys_updated_on>
+        <type>standard</type>
+        <value>delivery</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>4</component_indexes>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <label>Completed</label>
+        <order>1</order>
+        <stage_id>a78a1d2b-ef66-4eb3-9393-bb96a708a055</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6ecf6e7fdb856510465908b4f396197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <type>standard</type>
+        <value>complete</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>7</component_indexes>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <label>Request Cancelled</label>
+        <order>0</order>
+        <stage_id>950d5c88-9b0d-4d1e-a44d-38f25bdde6d2</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a6cf6e7fdb856510465908b4f396197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:25</sys_updated_on>
+        <type>standard</type>
+        <value>Request Cancelled</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>0</component_indexes>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <label>Request Approved</label>
+        <order>2</order>
+        <stage_id>f5b31566-6a31-44b8-958a-8d3f80514611</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>aacf6e7fdb856510465908b4f396197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:25</sys_updated_on>
+        <type>standard</type>
+        <value>request_approved</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4ecf6e7fdb856510465908b4f3961910^sys_idNOT INcacf6e7fdb856510465908b4f3961911"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4ecf6e7fdb856510465908b4f3961910</id>
+        <name>WorkJam User Profile Change (internal)</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cacf6e7fdb856510465908b4f3961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=cacf6e7fdb856510465908b4f3961911"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4ecf6e7fdb856510465908b4f3961910^sys_idNOT IN5acf6e7fdb856510465908b4f396191c,92cf6e7fdb856510465908b4f3961918"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</model>
+        <model_id>4ecf6e7fdb856510465908b4f3961910</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4ecf6e7fdb856510465908b4f3961910</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5acf6e7fdb856510465908b4f396191c</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</model>
+        <model_id>4ecf6e7fdb856510465908b4f3961910</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4ecf6e7fdb856510465908b4f3961910</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>92cf6e7fdb856510465908b4f3961918</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=4ecf6e7fdb856510465908b4f3961910"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4ecf6e7fdb856510465908b4f3961910"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=4ecf6e7fdb856510465908b4f3961910^sys_idNOT IN5ecf6e7fdb856510465908b4f3961941,66cf6e7fdb856510465908b4f396195e,96cf6e7fdb856510465908b4f3961957,e6cf6e7fdb856510465908b4f3961964"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5ecf6e7fdb856510465908b4f3961941</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-09-21 01:19:38</sys_updated_on>
+        <ui_id>accdb817-09b3-4bb7-b280-620684589103</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5ecf6e7fdb856510465908b4f3961941"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5ecf6e7fdb856510465908b4f3961941</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>92cf6e7fdb856510465908b4f3961944</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:34</sys_updated_on>
+        <value>29be247fdb8d2510465908b4f396195e</value>
+        <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5ecf6e7fdb856510465908b4f3961941</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>decf6e7fdb856510465908b4f3961943</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:13</sys_updated_on>
+        <value>455f2433dbcd2510465908b4f396191f:item_option_new,18cfa033dbcd2510465908b4f39619ab:item_option_new,2c503c33dbcd2510465908b4f3961981:item_option_new,7e07fc3bdbcd2510465908b4f39619cb:item_option_new,b0b03473dbcd2510465908b4f39619ad:item_option_new,8ebee4ffdb8d2510465908b4f3961975:item_option_new,a7be28ffdb8d2510465908b4f39619ba:item_option_new,4ebee4ffdb8d2510465908b4f396196e:item_option_new,7ebee4ffdb8d2510465908b4f39619fa:item_option_new,ffbe28ffdb8d2510465908b4f39619d3:item_option_new,6fbe28ffdb8d2510465908b4f39619ad:item_option_new,47be28ffdb8d2510465908b4f3961967:item_option_new,8ebee4ffdb8d2510465908b4f3961990:item_option_new,26bee4ffdb8d2510465908b4f39619cd:item_option_new,bebe28ffdb8d2510465908b4f3961924:item_option_new,62bee4ffdb8d2510465908b4f39619e8:item_option_new,07be28ffdb8d2510465908b4f3961946:item_option_new,22bee4ffdb8d2510465908b4f39619d6:item_option_new,12bee4ffdb8d2510465908b4f39619b0:item_option_new,fabe28ffdb8d2510465908b4f396193b:item_option_new,43be28ffdb8d2510465908b4f396195c:item_option_new,43be28ffdb8d2510465908b4f3961951:item_option_new,bf3420c0dbed2510465908b4f3961968:item_option_new,d494e480dbed2510465908b4f39619e2:item_option_new</value>
+        <variable display_value="Catalog Variables">7b0ba3abc31013002841b63b12d3aef7</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5ecf6e7fdb856510465908b4f3961941"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>5ecf6e7fdb856510465908b4f3961941</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>d6cf6e7fdb856510465908b4f3961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>5ecf6e7fdb856510465908b4f3961941</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>5ecf6e7fdb856510465908b4f3961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>5ecf6e7fdb856510465908b4f3961941</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>9acf6e7fdb856510465908b4f3961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5ecf6e7fdb856510465908b4f3961941"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5ecf6e7fdb856510465908b4f3961941"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <order>4</order>
+        <parent_ui_id>c24a0a11-e4ba-4b1b-9002-2b8e3c43f165</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>66cf6e7fdb856510465908b4f396195e</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-09-21 01:19:38</sys_updated_on>
+        <ui_id>a7d10c7f-2957-4f66-a4b4-55a7a40a2e93</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=66cf6e7fdb856510465908b4f396195e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>66cf6e7fdb856510465908b4f396195e</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>e2cf6e7fdb856510465908b4f3961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=66cf6e7fdb856510465908b4f396195e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>66cf6e7fdb856510465908b4f396195e</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>62cf6e7fdb856510465908b4f3961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>66cf6e7fdb856510465908b4f396195e</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>eacf6e7fdb856510465908b4f396195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>66cf6e7fdb856510465908b4f396195e</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>aecf6e7fdb856510465908b4f396195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments={{2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.number}} is completed</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=66cf6e7fdb856510465908b4f396195e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=66cf6e7fdb856510465908b4f396195e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>96cf6e7fdb856510465908b4f3961957</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-09-21 01:19:38</sys_updated_on>
+        <ui_id>2b96981b-2539-4af1-9038-49076e57ed2d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=96cf6e7fdb856510465908b4f3961957"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>96cf6e7fdb856510465908b4f3961957</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>22cf6e7fdb856510465908b4f396195a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:34</sys_updated_on>
+        <value>29be247fdb8d2510465908b4f396195e</value>
+        <variable display_value="Template Catalog Item">f751fd0e73141300612c273ffff6a7b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>96cf6e7fdb856510465908b4f3961957</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>6ecf6e7fdb856510465908b4f3961959</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:13</sys_updated_on>
+        <value>455f2433dbcd2510465908b4f396191f:item_option_new,cb91b8b3dbcd2510465908b4f396195f:item_option_new,18cfa033dbcd2510465908b4f39619ab:item_option_new,df91b8b3dbcd2510465908b4f396197b:item_option_new,bf3420c0dbed2510465908b4f3961968:item_option_new,1b91b8b3dbcd2510465908b4f3961992:item_option_new,54d170f3dbcd2510465908b4f39619fc:item_option_new,2c503c33dbcd2510465908b4f3961981:item_option_new,ecd1b0f3dbcd2510465908b4f3961925:item_option_new,b0b03473dbcd2510465908b4f39619ad:item_option_new,60d1b0f3dbcd2510465908b4f396193d:item_option_new,4df52044dbed2510465908b4f396199c:item_option_new,7e07fc3bdbcd2510465908b4f39619cb:item_option_new,55f52044dbed2510465908b4f39619bb:item_option_new,d1f52044dbed2510465908b4f39619d3:item_option_new,82bee4ffdb8d2510465908b4f396197d:item_option_new,8ebee4ffdb8d2510465908b4f3961975:item_option_new,46bee4ffdb8d2510465908b4f396195b:item_option_new,d494e480dbed2510465908b4f39619e2:item_option_new,fabe28ffdb8d2510465908b4f3961904:item_option_new,9a766c44dbed2510465908b4f396199a:item_option_new,a7be28ffdb8d2510465908b4f39619ba:item_option_new,22766c44dbed2510465908b4f39619ba:item_option_new,7ebee4ffdb8d2510465908b4f39619fa:item_option_new,e6766c44dbed2510465908b4f39619d2:item_option_new,5ebee4ffdb8d2510465908b4f39619c4:item_option_new,4ebee4ffdb8d2510465908b4f396196e:item_option_new,9bbe28ffdb8d2510465908b4f3961995:item_option_new,12bee4ffdb8d2510465908b4f39619a8:item_option_new,b7be28ffdb8d2510465908b4f39619ee:item_option_new,ffbe28ffdb8d2510465908b4f39619d3:item_option_new,fdbee4ffdb8d2510465908b4f3961936:item_option_new,6fbe28ffdb8d2510465908b4f39619ad:item_option_new,1fbe28ffdb8d2510465908b4f3961972:item_option_new,1abee4ffdb8d2510465908b4f3961998:item_option_new,47be28ffdb8d2510465908b4f3961967:item_option_new,d2bee4ffdb8d2510465908b4f39619a0:item_option_new,e6bee4ffdb8d2510465908b4f39619f1:item_option_new,f6be28ffdb8d2510465908b4f396190e:item_option_new,8ebee4ffdb8d2510465908b4f3961990:item_option_new,8abee4ffdb8d2510465908b4f3961961:item_option_new,26bee4ffdb8d2510465908b4f39619cd:item_option_new,82bee4ffdb8d2510465908b4f3961968:item_option_new,b1bee4ffdb8d2510465908b4f3961955:item_option_new,bebe28ffdb8d2510465908b4f3961924:item_option_new,d3be28ffdb8d2510465908b4f396197e:item_option_new,62bee4ffdb8d2510465908b4f39619e8:item_option_new,5fbe28ffdb8d2510465908b4f3961989:item_option_new,b3be28ffdb8d2510465908b4f39619e1:item_option_new,07be28ffdb8d2510465908b4f3961946:item_option_new,22bee4ffdb8d2510465908b4f39619d6:item_option_new,3dbee4ffdb8d2510465908b4f3961942:item_option_new,12bee4ffdb8d2510465908b4f39619b0:item_option_new,62bee4ffdb8d2510465908b4f39619df:item_option_new,a3be28ffdb8d2510465908b4f39619c7:item_option_new,fabe28ffdb8d2510465908b4f396193b:item_option_new,31bee4ffdb8d2510465908b4f396193d:item_option_new,43be28ffdb8d2510465908b4f396195c:item_option_new,abbe28ffdb8d2510465908b4f39619a1:item_option_new,43be28ffdb8d2510465908b4f3961951:item_option_new</value>
+        <variable display_value="Catalog Variables">7b51fd0e73141300612c273ffff6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>96cf6e7fdb856510465908b4f3961957</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>e2cf6e7fdb856510465908b4f396195a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 23:09:54</sys_updated_on>
+        <value/>
+        <variable display_value="Fields">7751fd0e73141300612c273ffff6a7ac</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=96cf6e7fdb856510465908b4f3961957"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_fields</field>
+        <id>96cf6e7fdb856510465908b4f3961957</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>eacf6e7fdb856510465908b4f3961959</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 23:09:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>assignment_group=fd-scripted^priority=4^description=Resolve WorkJam User Profile issue
+{{accdb817-09b3-4bb7-b280-620684589103.requested_change}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_requested_item</field>
+        <id>96cf6e7fdb856510465908b4f3961957</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>66cf6e7fdb856510465908b4f3961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_short_description</field>
+        <id>96cf6e7fdb856510465908b4f3961957</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>a2cf6e7fdb856510465908b4f3961959</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:41:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>WorkJam User Profile Change - {{accdb817-09b3-4bb7-b280-620684589103.requested_change}} - for {{accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_name_so.name}}{{accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>96cf6e7fdb856510465908b4f3961957</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>eecf6e7fdb856510465908b4f3961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>96cf6e7fdb856510465908b4f3961957</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>2acf6e7fdb856510465908b4f3961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=96cf6e7fdb856510465908b4f3961957^sys_idNOT INb6aa258cdb11a510465908b4f396195f"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>ah_fields</input_name>
+        <instance>96cf6e7fdb856510465908b4f3961957</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"assignment_group":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar requestedChange \u003d fd_data._1__get_catalog_variables.requested_change;\nvar assignmentGroup \u003d \"d625dccec0a8016700a222a0f7900d06\"; // Default is \"Service Desk\" Group\n\nif ( requestedChange \u003d\u003d \u0027Deactivate Profile\u0027 ) {\n    // Set Assignment Group to \"WorkJam Support\" Group\n    var assignmentGroup \u003d \"558f07811b4de190b2fd43b7b04bcb12\";\n}\n\nreturn assignmentGroup;","savedValue":"{\"display\":\"IT Service Desk\",\"value\":\"15484ae94fcc47809825eb4f0310c7eb\",\"sys_id\":\"15484ae94fcc47809825eb4f0310c7eb\"}"}}</script>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 23:09:54</sys_created_on>
+        <sys_id>b6aa258cdb11a510465908b4f396195f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-24 05:13:00</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=96cf6e7fdb856510465908b4f3961957"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <order>7</order>
+        <parent_ui_id>4188628c-48f3-4652-8f40-579567ff2d1e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e6cf6e7fdb856510465908b4f3961964</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-09-21 01:19:38</sys_updated_on>
+        <ui_id>a9e87e9a-b9e5-4727-be66-125a13c5cc0b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e6cf6e7fdb856510465908b4f3961964"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e6cf6e7fdb856510465908b4f3961964</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>22cf6e7fdb856510465908b4f3961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e6cf6e7fdb856510465908b4f3961964"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e6cf6e7fdb856510465908b4f3961964</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>aecf6e7fdb856510465908b4f3961965</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e6cf6e7fdb856510465908b4f3961964</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>2acf6e7fdb856510465908b4f3961965</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>e6cf6e7fdb856510465908b4f3961964</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>eacf6e7fdb856510465908b4f3961965</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments={{2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.number}} is cancelled</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e6cf6e7fdb856510465908b4f3961964"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e6cf6e7fdb856510465908b4f3961964"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=4ecf6e7fdb856510465908b4f3961910"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=4ecf6e7fdb856510465908b4f3961910^sys_idNOT IN5acf6e7fdb856510465908b4f3961923,92cf6e7fdb856510465908b4f396192b,9ecf6e7fdb856510465908b4f396193b,d6cf6e7fdb856510465908b4f3961928"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8f2072628770ed10a50e74497bbb3596</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5acf6e7fdb856510465908b4f3961923</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:27</sys_updated_on>
+        <ui_id>c24a0a11-e4ba-4b1b-9002-2b8e3c43f165</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5acf6e7fdb856510465908b4f3961923"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5acf6e7fdb856510465908b4f3961923</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>56cf6e7fdb856510465908b4f3961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <value>SCTASK is completed</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5acf6e7fdb856510465908b4f3961923"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>5acf6e7fdb856510465908b4f3961923</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>d2cf6e7fdb856510465908b4f3961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.state}}=3</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>5acf6e7fdb856510465908b4f3961923</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>1ecf6e7fdb856510465908b4f3961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5acf6e7fdb856510465908b4f3961923"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5acf6e7fdb856510465908b4f3961923"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">832072628770ed10a50e74497bbb35b1</block>
+        <comment/>
+        <connected_to>c24a0a11-e4ba-4b1b-9002-2b8e3c43f165</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>92cf6e7fdb856510465908b4f396192b</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:27</sys_updated_on>
+        <ui_id>4188628c-48f3-4652-8f40-579567ff2d1e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=92cf6e7fdb856510465908b4f396192b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>92cf6e7fdb856510465908b4f396192b</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>12cf6e7fdb856510465908b4f396193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <value>SCTASK is cancelled</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=92cf6e7fdb856510465908b4f396192b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>92cf6e7fdb856510465908b4f396192b</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>9ecf6e7fdb856510465908b4f396193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.state}}=4</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>92cf6e7fdb856510465908b4f396192b</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_id>16cf6e7fdb856510465908b4f396192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=92cf6e7fdb856510465908b4f396192b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=92cf6e7fdb856510465908b4f396192b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8f2072628770ed10a50e74497bbb35ba</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>4188628c-48f3-4652-8f40-579567ff2d1e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9ecf6e7fdb856510465908b4f396193b</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:28</sys_updated_on>
+        <ui_id>e29720ad-9453-4f2f-bb13-f52a2a515ab0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9ecf6e7fdb856510465908b4f396193b"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9ecf6e7fdb856510465908b4f396193b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9ecf6e7fdb856510465908b4f396193b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0b2072628770ed10a50e74497bbb35ae</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c24a0a11-e4ba-4b1b-9002-2b8e3c43f165</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d6cf6e7fdb856510465908b4f3961928</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:27</sys_updated_on>
+        <ui_id>47eabd7e-658c-448c-b178-07214fa078ad</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d6cf6e7fdb856510465908b4f3961928"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d6cf6e7fdb856510465908b4f3961928"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d6cf6e7fdb856510465908b4f3961928"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4ecf6e7fdb856510465908b4f3961910"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4ecf6e7fdb856510465908b4f3961910"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4ecf6e7fdb856510465908b4f3961910^sys_idNOT IN1acf6e7fdb856510465908b4f3961920,56cf6e7fdb856510465908b4f396191b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4ecf6e7fdb856510465908b4f3961910</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1acf6e7fdb856510465908b4f3961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4ecf6e7fdb856510465908b4f3961910</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:33:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>56cf6e7fdb856510465908b4f396191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Item</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:33:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4ecf6e7fdb856510465908b4f3961910"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4ecf6e7fdb856510465908b4f3961910"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4ecf6e7fdb856510465908b4f3961910"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>workjam_user_profile_change_internal</internal_name>
+        <label_cache>[{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_name_so.name","label":"1 - Get Catalog Variables➛requested_for_team_member_name_so➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.temporary_or_permanent_change","label":"1➛temporary_or_permanent_change","reference":"","reference_display":"temporary_or_permanent_change","type":"choice","base_type":"choice","choices":[{"label":"Temporary","value":"Temporary","order":100.0},{"label":"Permanent","value":"Permanent","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requestor_name","label":"1 - Get Catalog Variables➛requestor_name","reference":"","reference_display":"requestor_name","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for","label":"1 - Get Catalog Variables➛requested_for","reference":"","reference_display":"requested_for","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_work_location","label":"1 - Get Catalog Variables➛requested_for_work_location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_email","label":"1 - Get Catalog Variables➛requested_for_email","reference":"","reference_display":"requested_for_email","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.workjam_username","label":"1 - Get Catalog Variables➛workjam_username","reference":"","reference_display":"workjam_username","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.comment_additional_information","label":"1 - Get Catalog Variables➛comment_additional_information","reference":"","reference_display":"comment_additional_information","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.type_of_access_profile_issue","label":"1➛type_of_access_profile_issue","reference":"","reference_display":"type_of_access_profile_issue","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Unable to add/change position on user profile","value":"Unable to add/change position on user profile","order":100.0},{"label":"Other","value":"Other","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.current_position","label":"1➛current_position","reference":"","reference_display":"current_position","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.new_location","label":"1➛new_location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.new_position","label":"1➛new_position","reference":"","reference_display":"new_position","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.describe_access_profile_issue","label":"1➛describe_access_profile_issue","reference":"","reference_display":"describe_access_profile_issue","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task","label":"2 - Create Catalog Task➛Catalog Task","reference":"sc_task","reference_display":"Catalogue Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.__action_status__","label":"2 - Create Catalog Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.__dont_treat_as_error__","label":"2 - Create Catalog Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.type_of_user_profile_issue","label":"1 - Get Catalog Variables➛type_of_user_profile_issue","reference":"","reference_display":"type_of_user_profile_issue","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Unable to add/change position on user profile","value":"Unable to add/change position on user profile","order":100.0},{"label":"Add team member","value":"Add team member","order":100.0},{"label":"Other","value":"Other","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.describe_user_profile_issue","label":"1 - Get Catalog Variables➛describe_user_profile_issue","reference":"","reference_display":"describe_user_profile_issue","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.state","label":"2 - Create Catalog Task➛Catalog Task➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sc_task","column_name":"state","choices":[{"image":"","label":"Open","used":false,"reference":false,"rawLabel":"Open","selected":false,"missing":false,"value":"1","parameters":{"name":"sc_task"}},{"image":"","label":"Closed Complete","used":false,"reference":false,"rawLabel":"Closed Complete","selected":false,"missing":false,"value":"3","parameters":{"name":"sc_task"}},{"image":"","label":"Cancelled","used":false,"reference":false,"rawLabel":"Cancelled","selected":false,"missing":false,"value":"4","parameters":{"name":"sc_task"}},{"image":"","label":"Follow up","used":false,"reference":false,"rawLabel":"Follow up","selected":false,"missing":false,"value":"8","parameters":{"name":"sc_task"}}]},{"name":"a7d10c7f-2957-4f66-a4b4-55a7a40a2e93.record","label":"4 - Update Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a7d10c7f-2957-4f66-a4b4-55a7a40a2e93.table_name","label":"4 - Update Record➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a7d10c7f-2957-4f66-a4b4-55a7a40a2e93.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a7d10c7f-2957-4f66-a4b4-55a7a40a2e93.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.number","label":"2 - Create Catalog Task➛Catalog Task➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_task","column_name":"number"},{"name":"a9e87e9a-b9e5-4727-be66-125a13c5cc0b.record","label":"7 - Update Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9e87e9a-b9e5-4727-be66-125a13c5cc0b.table_name","label":"7 - Update Record➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9e87e9a-b9e5-4727-be66-125a13c5cc0b.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9e87e9a-b9e5-4727-be66-125a13c5cc0b.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9550580a-a4a4-4337-8b44-8bb2ddba8385.record","label":"4 - Update Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9550580a-a4a4-4337-8b44-8bb2ddba8385.table_name","label":"4 - Update Record➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9550580a-a4a4-4337-8b44-8bb2ddba8385.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9550580a-a4a4-4337-8b44-8bb2ddba8385.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.assignment_group.name","label":"2 - Create Catalog Task➛Catalog Task➛Assignment group➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user_group","column_name":"name"},{"name":"9e598d6e-079b-4cc4-8c48-8782164d75af.__action_status__","label":"4 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"9e598d6e-079b-4cc4-8c48-8782164d75af.__dont_treat_as_error__","label":"4 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_name","label":"1 - Get Catalog Variables➛requested_for_team_member_name","reference":"","reference_display":"requested_for_team_member_name","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_email_address","label":"1 - Get Catalog Variables➛requested_for_email_address","reference":"","reference_display":"requested_for_email_address","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_change","label":"1 - Get Catalog Variables➛requested_change","reference":"","reference_display":"requested_change","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Add Position","value":"Add Position","order":100.0},{"label":"Remove Position","value":"Remove Position","order":100.0},{"label":"Change Position","value":"Change Position","order":100.0},{"label":"Deactivate Profile","value":"Deactivate Profile","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.position_type","label":"1 - Get Catalog Variables➛position_type","reference":"","reference_display":"position_type","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.start_date","label":"1 - Get Catalog Variables➛start_date","reference":"","reference_display":"start_date","type":"glide_date","base_type":"glide_date","attributes":{"catalogType":"9","catalogTypeLabel":"Date"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.end_date_if_temporary_change","label":"1 - Get Catalog Variables➛end_date_if_temporary_change","reference":"","reference_display":"end_date_if_temporary_change","type":"glide_date","base_type":"glide_date","attributes":{"catalogType":"9","catalogTypeLabel":"Date"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.add_position","label":"1 - Get Catalog Variables➛add_position","reference":"","reference_display":"add_position","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Retail Manager","value":"Retail Manager","order":100.0},{"label":"Assistant Retail Manager","value":"Assistant Retail Manager","order":100.0},{"label":"Sales Assistant","value":"Sales Assistant","order":100.0},{"label":"Beauty Advisor","value":"Beauty Advisor","order":100.0},{"label":"Pharmacist","value":"Pharmacist","order":100.0},{"label":"Pharmacy Assistant","value":"Pharmacy Assistant","order":100.0},{"label":"Pharmacy Intern","value":"Pharmacy Intern","order":100.0},{"label":"Pharmacy Manager","value":"Pharmacy Manager","order":100.0},{"label":"Dispensary Technician","value":"Dispensary Technician","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.store_location","label":"1 - Get Catalog Variables➛store_location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.remove_position","label":"1 - Get Catalog Variables➛remove_position","reference":"","reference_display":"remove_position","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Retail Manager","value":"Retail Manager","order":100.0},{"label":"Assistant Retail Manager","value":"Assistant Retail Manager","order":100.0},{"label":"Sales Assistant","value":"Sales Assistant","order":100.0},{"label":"Beauty Advisor","value":"Beauty Advisor","order":100.0},{"label":"Pharmacist","value":"Pharmacist","order":100.0},{"label":"Pharmacy Assistant","value":"Pharmacy Assistant","order":100.0},{"label":"Pharmacy Intern","value":"Pharmacy Intern","order":100.0},{"label":"Pharmacy Manager","value":"Pharmacy Manager","order":100.0},{"label":"Dispensary Technician","value":"Dispensary Technician","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.reason_for_removing_position","label":"1 - Get Catalog Variables➛reason_for_removing_position","reference":"","reference_display":"reason_for_removing_position","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Christmas Casual","value":"Christmas Casual","order":100.0},{"label":"Contract Tenure End","value":"Contract Tenure End","order":100.0},{"label":"Dismissed","value":"Dismissed","order":100.0},{"label":"Long Term Leave","value":"Long Term Leave","order":100.0},{"label":"Parental Leave","value":"Parental Leave","order":100.0},{"label":"Position Change","value":"Position Change","order":100.0},{"label":"Resigned","value":"Resigned","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.store_location_remove_position","label":"1 - Get Catalog Variables➛store_location_remove_position","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.deactivation_date","label":"1 - Get Catalog Variables➛deactivation_date","reference":"","reference_display":"deactivation_date","type":"glide_date","base_type":"glide_date","attributes":{"catalogType":"9","catalogTypeLabel":"Date"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.reason_for_deactivation","label":"1 - Get Catalog Variables➛reason_for_deactivation","reference":"","reference_display":"reason_for_deactivation","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":100.0},{"label":"Christmas Casual","value":"Christmas Casual","order":100.0},{"label":"Contract Tenure End","value":"Contract Tenure End","order":100.0},{"label":"Dismissed","value":"Dismissed","order":100.0},{"label":"Long Term Leave","value":"Long Term Leave","order":100.0},{"label":"Parental Leave","value":"Parental Leave","order":100.0},{"label":"Resigned","value":"Resigned","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.comments_additional_information","label":"1 - Get Catalog Variables➛comments_additional_information","reference":"","reference_display":"comments_additional_information","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_location","label":"1 - Get Catalog Variables➛requested_for_location","reference":"","reference_display":"requested_for_location","type":"choice","base_type":"choice","choices":[{"label":"Support Office","value":"Support Office","order":100.0},{"label":"Store","value":"Store","order":100.0}],"attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requestor_name_so","label":"1 - Get Catalog Variables➛requestor_name_so","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_name_so","label":"1 - Get Catalog Variables➛requested_for_team_member_name_so","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_work_location_so","label":"1 - Get Catalog Variables➛requested_for_work_location_so","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_email_address_so","label":"1 - Get Catalog Variables➛requested_for_team_member_email_address_so","reference":"","reference_display":"requested_for_team_member_email_address_so","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.contact_email_address_so","label":"1 - Get Catalog Variables➛contact_email_address_so","reference":"","reference_display":"contact_email_address_so","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"accdb817-09b3-4bb7-b280-620684589103.contact_email_address","label":"1 - Get Catalog Variables➛contact_email_address","reference":"","reference_display":"contact_email_address","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}}]</label_cache>
+        <master>true</master>
+        <name>WorkJam User Profile Change (internal)</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="WorkJam User Profile Change (internal)">4ecf6e7fdb856510465908b4f3961910</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>fa80fabfdb856510465908b4f39619c4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:25</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=fa80fabfdb856510465908b4f39619c4"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=fa80fabfdb856510465908b4f39619c4^sys_idNOT IN17803ebfdb856510465908b4f3961931"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>17803ebfdb856510465908b4f3961931</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:27</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=17803ebfdb856510465908b4f3961931"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=fa80fabfdb856510465908b4f39619c4^sys_idNOT IN53803ebfdb856510465908b4f3961932,5b803ebfdb856510465908b4f3961932,5f803ebfdb856510465908b4f3961932,d7803ebfdb856510465908b4f3961932,db803ebfdb856510465908b4f3961932,df803ebfdb856510465908b4f3961932"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>4</component_indexes>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <label>Completed</label>
+        <order>1</order>
+        <stage_id>a78a1d2b-ef66-4eb3-9393-bb96a708a055</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>53803ebfdb856510465908b4f3961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <type>standard</type>
+        <value>complete</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>7</component_indexes>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <label>Request Cancelled</label>
+        <order>0</order>
+        <stage_id>950d5c88-9b0d-4d1e-a44d-38f25bdde6d2</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5b803ebfdb856510465908b4f3961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <type>standard</type>
+        <value>Request Cancelled</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>0</component_indexes>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <label>Request Approved</label>
+        <order>2</order>
+        <stage_id>f5b31566-6a31-44b8-958a-8d3f80514611</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5f803ebfdb856510465908b4f3961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <type>standard</type>
+        <value>request_approved</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>1</component_indexes>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <label>Fulfillment</label>
+        <order>4</order>
+        <stage_id>e727e35f-7d93-4a92-b0f3-25afe9905d4a</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d7803ebfdb856510465908b4f3961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <type>standard</type>
+        <value>fulfillment</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <label>Waiting for Approval</label>
+        <order>3</order>
+        <stage_id>7a580329-9f25-4662-87d3-734de5570d42</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>db803ebfdb856510465908b4f3961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <type>standard</type>
+        <value>waiting_for_approval</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <label>Delivery</label>
+        <order>5</order>
+        <stage_id>e07f0d40-26e9-4897-8851-8b1661be224d</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In Progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>df803ebfdb856510465908b4f3961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <type>standard</type>
+        <value>delivery</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=fa80fabfdb856510465908b4f39619c4^sys_idNOT INcb80fabfdb856510465908b4f39619c5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>fa80fabfdb856510465908b4f39619c4</id>
+        <name>WorkJam User Profile Change (internal)</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cb80fabfdb856510465908b4f39619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=cb80fabfdb856510465908b4f39619c5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=fa80fabfdb856510465908b4f39619c4^sys_idNOT IN0380fabfdb856510465908b4f39619c7,8380fabfdb856510465908b4f39619f4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</model>
+        <model_id>fa80fabfdb856510465908b4f39619c4</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fa80fabfdb856510465908b4f39619c4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0380fabfdb856510465908b4f39619c7</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</model>
+        <model_id>fa80fabfdb856510465908b4f39619c4</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fa80fabfdb856510465908b4f39619c4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8380fabfdb856510465908b4f39619f4</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=fa80fabfdb856510465908b4f39619c4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fa80fabfdb856510465908b4f39619c4"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=fa80fabfdb856510465908b4f39619c4^sys_idNOT IN07803ebfdb856510465908b4f3961920,8f803ebfdb856510465908b4f3961914,97803ebfdb856510465908b4f3961929,d7803ebfdb856510465908b4f396192f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>07803ebfdb856510465908b4f3961920</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:25</sys_updated_on>
+        <ui_id>2b96981b-2539-4af1-9038-49076e57ed2d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=07803ebfdb856510465908b4f3961920"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>07803ebfdb856510465908b4f3961920</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>43803ebfdb856510465908b4f3961923</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 23:10:06</sys_updated_on>
+        <value/>
+        <variable display_value="Fields">7751fd0e73141300612c273ffff6a7ac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>07803ebfdb856510465908b4f3961920</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>8f803ebfdb856510465908b4f3961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <value>29be247fdb8d2510465908b4f396195e</value>
+        <variable display_value="Template Catalog Item">f751fd0e73141300612c273ffff6a7b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>07803ebfdb856510465908b4f3961920</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>cb803ebfdb856510465908b4f3961922</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:24</sys_updated_on>
+        <value>455f2433dbcd2510465908b4f396191f:item_option_new,cb91b8b3dbcd2510465908b4f396195f:item_option_new,18cfa033dbcd2510465908b4f39619ab:item_option_new,df91b8b3dbcd2510465908b4f396197b:item_option_new,bf3420c0dbed2510465908b4f3961968:item_option_new,1b91b8b3dbcd2510465908b4f3961992:item_option_new,54d170f3dbcd2510465908b4f39619fc:item_option_new,2c503c33dbcd2510465908b4f3961981:item_option_new,ecd1b0f3dbcd2510465908b4f3961925:item_option_new,b0b03473dbcd2510465908b4f39619ad:item_option_new,60d1b0f3dbcd2510465908b4f396193d:item_option_new,4df52044dbed2510465908b4f396199c:item_option_new,7e07fc3bdbcd2510465908b4f39619cb:item_option_new,55f52044dbed2510465908b4f39619bb:item_option_new,d1f52044dbed2510465908b4f39619d3:item_option_new,82bee4ffdb8d2510465908b4f396197d:item_option_new,8ebee4ffdb8d2510465908b4f3961975:item_option_new,46bee4ffdb8d2510465908b4f396195b:item_option_new,d494e480dbed2510465908b4f39619e2:item_option_new,fabe28ffdb8d2510465908b4f3961904:item_option_new,9a766c44dbed2510465908b4f396199a:item_option_new,a7be28ffdb8d2510465908b4f39619ba:item_option_new,22766c44dbed2510465908b4f39619ba:item_option_new,7ebee4ffdb8d2510465908b4f39619fa:item_option_new,e6766c44dbed2510465908b4f39619d2:item_option_new,5ebee4ffdb8d2510465908b4f39619c4:item_option_new,4ebee4ffdb8d2510465908b4f396196e:item_option_new,9bbe28ffdb8d2510465908b4f3961995:item_option_new,12bee4ffdb8d2510465908b4f39619a8:item_option_new,b7be28ffdb8d2510465908b4f39619ee:item_option_new,ffbe28ffdb8d2510465908b4f39619d3:item_option_new,fdbee4ffdb8d2510465908b4f3961936:item_option_new,6fbe28ffdb8d2510465908b4f39619ad:item_option_new,1fbe28ffdb8d2510465908b4f3961972:item_option_new,1abee4ffdb8d2510465908b4f3961998:item_option_new,47be28ffdb8d2510465908b4f3961967:item_option_new,d2bee4ffdb8d2510465908b4f39619a0:item_option_new,e6bee4ffdb8d2510465908b4f39619f1:item_option_new,f6be28ffdb8d2510465908b4f396190e:item_option_new,8ebee4ffdb8d2510465908b4f3961990:item_option_new,8abee4ffdb8d2510465908b4f3961961:item_option_new,26bee4ffdb8d2510465908b4f39619cd:item_option_new,82bee4ffdb8d2510465908b4f3961968:item_option_new,b1bee4ffdb8d2510465908b4f3961955:item_option_new,bebe28ffdb8d2510465908b4f3961924:item_option_new,d3be28ffdb8d2510465908b4f396197e:item_option_new,62bee4ffdb8d2510465908b4f39619e8:item_option_new,5fbe28ffdb8d2510465908b4f3961989:item_option_new,b3be28ffdb8d2510465908b4f39619e1:item_option_new,07be28ffdb8d2510465908b4f3961946:item_option_new,22bee4ffdb8d2510465908b4f39619d6:item_option_new,3dbee4ffdb8d2510465908b4f3961942:item_option_new,12bee4ffdb8d2510465908b4f39619b0:item_option_new,62bee4ffdb8d2510465908b4f39619df:item_option_new,a3be28ffdb8d2510465908b4f39619c7:item_option_new,fabe28ffdb8d2510465908b4f396193b:item_option_new,31bee4ffdb8d2510465908b4f396193d:item_option_new,43be28ffdb8d2510465908b4f396195c:item_option_new,abbe28ffdb8d2510465908b4f39619a1:item_option_new,43be28ffdb8d2510465908b4f3961951:item_option_new</value>
+        <variable display_value="Catalog Variables">7b51fd0e73141300612c273ffff6a7be</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=07803ebfdb856510465908b4f3961920"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_fields</field>
+        <id>07803ebfdb856510465908b4f3961920</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>4b803ebfdb856510465908b4f3961922</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 23:10:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>assignment_group=fd-scripted^priority=4^description=Resolve WorkJam User Profile issue
+{{accdb817-09b3-4bb7-b280-620684589103.requested_change}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_requested_item</field>
+        <id>07803ebfdb856510465908b4f3961920</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>c3803ebfdb856510465908b4f3961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_short_description</field>
+        <id>07803ebfdb856510465908b4f3961920</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>03803ebfdb856510465908b4f3961922</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:41:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>WorkJam User Profile Change - {{accdb817-09b3-4bb7-b280-620684589103.requested_change}} - for {{accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_name_so.name}}{{accdb817-09b3-4bb7-b280-620684589103.requested_for_team_member_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>07803ebfdb856510465908b4f3961920</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>4f803ebfdb856510465908b4f3961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>07803ebfdb856510465908b4f3961920</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>87803ebfdb856510465908b4f3961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=07803ebfdb856510465908b4f3961920^sys_idNOT IN79baa58cdb11a510465908b4f39619d0"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>ah_fields</input_name>
+        <instance>07803ebfdb856510465908b4f3961920</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"assignment_group":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar requestedChange \u003d fd_data._1__get_catalog_variables.requested_change;\nvar assignmentGroup \u003d \"d625dccec0a8016700a222a0f7900d06\"; // Default is \"Service Desk\" Group\n\nif ( requestedChange \u003d\u003d \u0027Deactivate Profile\u0027 ) {\n    // Set Assignment Group to \"WorkJam Support\" Group\n    var assignmentGroup \u003d \"558f07811b4de190b2fd43b7b04bcb12\";\n}\n\nreturn assignmentGroup;","savedValue":"{\"display\":\"IT Service Desk\",\"value\":\"15484ae94fcc47809825eb4f0310c7eb\",\"sys_id\":\"15484ae94fcc47809825eb4f0310c7eb\"}"}}</script>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 23:10:06</sys_created_on>
+        <sys_id>79baa58cdb11a510465908b4f39619d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-24 05:13:12</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=07803ebfdb856510465908b4f3961920"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8f803ebfdb856510465908b4f3961914</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:25</sys_updated_on>
+        <ui_id>accdb817-09b3-4bb7-b280-620684589103</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8f803ebfdb856510465908b4f3961914"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8f803ebfdb856510465908b4f3961914</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_id>8f803ebfdb856510465908b4f3961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <value>29be247fdb8d2510465908b4f396195e</value>
+        <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8f803ebfdb856510465908b4f3961914</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_id>cb803ebfdb856510465908b4f3961916</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:24</sys_updated_on>
+        <value>455f2433dbcd2510465908b4f396191f:item_option_new,18cfa033dbcd2510465908b4f39619ab:item_option_new,2c503c33dbcd2510465908b4f3961981:item_option_new,7e07fc3bdbcd2510465908b4f39619cb:item_option_new,b0b03473dbcd2510465908b4f39619ad:item_option_new,8ebee4ffdb8d2510465908b4f3961975:item_option_new,a7be28ffdb8d2510465908b4f39619ba:item_option_new,4ebee4ffdb8d2510465908b4f396196e:item_option_new,7ebee4ffdb8d2510465908b4f39619fa:item_option_new,ffbe28ffdb8d2510465908b4f39619d3:item_option_new,6fbe28ffdb8d2510465908b4f39619ad:item_option_new,47be28ffdb8d2510465908b4f3961967:item_option_new,8ebee4ffdb8d2510465908b4f3961990:item_option_new,26bee4ffdb8d2510465908b4f39619cd:item_option_new,bebe28ffdb8d2510465908b4f3961924:item_option_new,62bee4ffdb8d2510465908b4f39619e8:item_option_new,07be28ffdb8d2510465908b4f3961946:item_option_new,22bee4ffdb8d2510465908b4f39619d6:item_option_new,12bee4ffdb8d2510465908b4f39619b0:item_option_new,fabe28ffdb8d2510465908b4f396193b:item_option_new,43be28ffdb8d2510465908b4f396195c:item_option_new,43be28ffdb8d2510465908b4f3961951:item_option_new,bf3420c0dbed2510465908b4f3961968:item_option_new,d494e480dbed2510465908b4f39619e2:item_option_new</value>
+        <variable display_value="Catalog Variables">7b0ba3abc31013002841b63b12d3aef7</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8f803ebfdb856510465908b4f3961914"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>8f803ebfdb856510465908b4f3961914</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_id>c3803ebfdb856510465908b4f3961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>8f803ebfdb856510465908b4f3961914</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_id>4b803ebfdb856510465908b4f3961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>8f803ebfdb856510465908b4f3961914</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_id>87803ebfdb856510465908b4f3961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8f803ebfdb856510465908b4f3961914"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8f803ebfdb856510465908b4f3961914"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <order>4</order>
+        <parent_ui_id>c24a0a11-e4ba-4b1b-9002-2b8e3c43f165</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>97803ebfdb856510465908b4f3961929</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:25</sys_updated_on>
+        <ui_id>a7d10c7f-2957-4f66-a4b4-55a7a40a2e93</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=97803ebfdb856510465908b4f3961929"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>97803ebfdb856510465908b4f3961929</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>d3803ebfdb856510465908b4f396192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=97803ebfdb856510465908b4f3961929"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>97803ebfdb856510465908b4f3961929</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>53803ebfdb856510465908b4f396192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>97803ebfdb856510465908b4f3961929</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>db803ebfdb856510465908b4f396192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>97803ebfdb856510465908b4f3961929</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>9f803ebfdb856510465908b4f396192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments={{2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.number}} is completed</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=97803ebfdb856510465908b4f3961929"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=97803ebfdb856510465908b4f3961929"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <order>7</order>
+        <parent_ui_id>4188628c-48f3-4652-8f40-579567ff2d1e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d7803ebfdb856510465908b4f396192f</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:25</sys_updated_on>
+        <ui_id>a9e87e9a-b9e5-4727-be66-125a13c5cc0b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d7803ebfdb856510465908b4f396192f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d7803ebfdb856510465908b4f396192f</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>13803ebfdb856510465908b4f3961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d7803ebfdb856510465908b4f396192f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d7803ebfdb856510465908b4f396192f</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>9f803ebfdb856510465908b4f3961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d7803ebfdb856510465908b4f396192f</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>1b803ebfdb856510465908b4f3961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d7803ebfdb856510465908b4f396192f</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:44</sys_created_on>
+        <sys_id>db803ebfdb856510465908b4f3961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments={{2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.number}} is cancelled</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d7803ebfdb856510465908b4f396192f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d7803ebfdb856510465908b4f396192f"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=fa80fabfdb856510465908b4f39619c4"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=fa80fabfdb856510465908b4f39619c4^sys_idNOT IN47803ebfdb856510465908b4f3961905,4f80fabfdb856510465908b4f39619ff,c3803ebfdb856510465908b4f3961908,cf803ebfdb856510465908b4f396190c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0b2072628770ed10a50e74497bbb35ae</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c24a0a11-e4ba-4b1b-9002-2b8e3c43f165</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>47803ebfdb856510465908b4f3961905</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:25</sys_updated_on>
+        <ui_id>47eabd7e-658c-448c-b178-07214fa078ad</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=47803ebfdb856510465908b4f3961905"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=47803ebfdb856510465908b4f3961905"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=47803ebfdb856510465908b4f3961905"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8f2072628770ed10a50e74497bbb3596</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4f80fabfdb856510465908b4f39619ff</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:25</sys_updated_on>
+        <ui_id>c24a0a11-e4ba-4b1b-9002-2b8e3c43f165</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4f80fabfdb856510465908b4f39619ff"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4f80fabfdb856510465908b4f39619ff</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_id>c3803ebfdb856510465908b4f3961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <value>SCTASK is completed</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4f80fabfdb856510465908b4f39619ff"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4f80fabfdb856510465908b4f39619ff</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_id>43803ebfdb856510465908b4f3961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.state}}=3</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4f80fabfdb856510465908b4f39619ff</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_id>8b803ebfdb856510465908b4f3961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4f80fabfdb856510465908b4f39619ff"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4f80fabfdb856510465908b4f39619ff"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">832072628770ed10a50e74497bbb35b1</block>
+        <comment/>
+        <connected_to>c24a0a11-e4ba-4b1b-9002-2b8e3c43f165</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c3803ebfdb856510465908b4f3961908</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:25</sys_updated_on>
+        <ui_id>4188628c-48f3-4652-8f40-579567ff2d1e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c3803ebfdb856510465908b4f3961908"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c3803ebfdb856510465908b4f3961908</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_id>43803ebfdb856510465908b4f396190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <value>SCTASK is cancelled</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c3803ebfdb856510465908b4f3961908"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c3803ebfdb856510465908b4f3961908</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_id>cf803ebfdb856510465908b4f396190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{2b96981b-2539-4af1-9038-49076e57ed2d.Catalog Task.state}}=4</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>c3803ebfdb856510465908b4f3961908</id>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_id>0f803ebfdb856510465908b4f396190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c3803ebfdb856510465908b4f3961908"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c3803ebfdb856510465908b4f3961908"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8f2072628770ed10a50e74497bbb35ba</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="WorkJam User Profile Change (internal)">fa80fabfdb856510465908b4f39619c4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>4188628c-48f3-4652-8f40-579567ff2d1e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cf803ebfdb856510465908b4f396190c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-03-08 05:09:25</sys_updated_on>
+        <ui_id>e29720ad-9453-4f2f-bb13-f52a2a515ab0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=cf803ebfdb856510465908b4f396190c"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=cf803ebfdb856510465908b4f396190c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cf803ebfdb856510465908b4f396190c"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fa80fabfdb856510465908b4f39619c4"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=fa80fabfdb856510465908b4f39619c4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_fa80fabfdb856510465908b4f39619c4^sys_idNOT IN4b80fabfdb856510465908b4f39619f8,8380fabfdb856510465908b4f39619e4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fa80fabfdb856510465908b4f39619c4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4b80fabfdb856510465908b4f39619f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Item</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fa80fabfdb856510465908b4f39619c4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8380fabfdb856510465908b4f39619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 09:36:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_fa80fabfdb856510465908b4f39619c4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_fa80fabfdb856510465908b4f39619c4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_fa80fabfdb856510465908b4f39619c4"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>4ecf6e7fdb856510465908b4f3961910</sys_id>
+        <latest_snapshot>fa80fabfdb856510465908b4f39619c4</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch4-hotfix2b-07-25-2023_08-08-2023_0939.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4ecf6e7fdb856510465908b4f3961910^sys_idNOT IN2f803ebfdb856510465908b4f3961971"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"2f803ebfdb856510465908b4f3961971","name":"plan","plan_signature":null}}</plan>
+        <plan_id>4ecf6e7fdb856510465908b4f3961910</plan_id>
+        <snapshot>bcac9edb97997550fe1b7936f053af3d</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 09:36:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>2f803ebfdb856510465908b4f3961971</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-24 05:13:17</sys_updated_on>
+        <trigger display_value="">67803ebfdb856510465908b4f3961971</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=4ecf6e7fdb856510465908b4f3961910"/>
+</record_update>

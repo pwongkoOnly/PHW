@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="WorkJam User Profile Change (internal)">29be247fdb8d2510465908b4f396195e</catalog_item>
+        <catalog_variable>IO:7e07fc3bdbcd2510465908b4f39619cb</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>300</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 00:50:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a2f7f83fdbcd2510465908b4f39619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requested_for_work_location_so</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_a2f7f83fdbcd2510465908b4f39619b5</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 00:50:23</sys_updated_on>
+        <table/>
+        <ui_policy display_value="">2157b8fbdbcd2510465908b4f3961920</ui_policy>
+        <variable>requested_for_work_location_so</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="WorkJam Profile">b9ad8b6087b02910a50e74497bbb3517</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-06 10:59:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ab60a3dedbfce150465908b4f3961972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WorkJam Profile.SNC External</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_ab60a3dedbfce150465908b4f3961972</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-06 10:59:21</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</application>
+        <file_path/>
+        <instance_id>969d0382db72fac00e785d00cf961913</instance_id>
+        <instance_name>apinet</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_ab60a3dedbfce150465908b4f3961972</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="WorkJam Profile">b9ad8b6087b02910a50e74497bbb3517</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>Paulus.Wongko@api.net.au</sys_created_by><sys_created_on>2023-02-06 10:59:21</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>ab60a3dedbfce150465908b4f3961972</sys_id><sys_mod_count>0</sys_mod_count><sys_name>WorkJam Profile.SNC External</sys_name><sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_ab60a3dedbfce150465908b4f3961972</sys_update_name><sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by><sys_updated_on>2023-02-06 10:59:21</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>-172586986</payload_hash>
+        <record_name>WorkJam Profile.SNC External</record_name>
+        <reverted_from/>
+        <source>bd39423587de61d051cdcae20cbb3520</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-04-20 04:55:48</sys_created_on>
+        <sys_id>c649463587de61d051cdcae20cbb35e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1879d04c7c50000001</sys_recorded_at>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-04-20 04:56:20</sys_updated_on>
+        <type>Catalogue Item Available for</type>
+        <update_guid>6360a3dea1fce15006f09b02a021f375</update_guid>
+        <update_guid_history>6360a3dea1fce15006f09b02a021f375:-172586986</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 20/04/2023 15:04:25">cc4b8a7987de61d051cdcae20cbb35f2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-04-20 05:04:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>020a68dee9a54bbc99e6192a0ea5e9c4</sys_id>
+        <sys_metadata>ab60a3dedbfce150465908b4f3961972</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WorkJam Profile.SNC External</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_scope_delete display_value="">1f311dcb338447a88b25137862d99590</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_ab60a3dedbfce150465908b4f3961972</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_ab60a3dedbfce150465908b4f3961972">c649463587de61d051cdcae20cbb35e7</sys_update_version>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-04-20 05:04:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
