@@ -22,7 +22,7 @@
         <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
         <sys_updated_on>2023-03-08 04:31:37</sys_updated_on>
         <table/>
-        <ui_policy display_value="If Support Office is selected">6ca56804dbed2510465908b4f39619f3</ui_policy>
+        <ui_policy display_value="">6ca56804dbed2510465908b4f39619f3</ui_policy>
         <variable>requestor_name_so</variable>
         <variable_set/>
         <visible>true</visible>

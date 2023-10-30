@@ -32,7 +32,7 @@
         <sys_created_on>2023-02-21 09:12:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_domain_path/>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>08a714d3db81e110465908b4f396198e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>If Content not visible, Channel/message group no longer visible or Knowledge Centre content unavailable selected</sys_name>

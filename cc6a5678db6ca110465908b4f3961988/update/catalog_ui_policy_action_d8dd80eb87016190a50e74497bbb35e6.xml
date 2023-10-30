@@ -22,7 +22,7 @@
         <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
         <sys_updated_on>2023-02-22 03:13:48</sys_updated_on>
         <table/>
-        <ui_policy display_value="If Change Position selected">d0dd80eb87016190a50e74497bbb35da</ui_policy>
+        <ui_policy display_value="">d0dd80eb87016190a50e74497bbb35da</ui_policy>
         <variable>end_date_if_temporary_change</variable>
         <variable_set/>
         <visible>true</visible>

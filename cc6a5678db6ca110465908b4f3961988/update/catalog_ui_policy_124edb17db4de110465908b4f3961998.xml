@@ -32,7 +32,7 @@
         <sys_created_on>2023-02-21 23:40:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_domain_path/>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>124edb17db4de110465908b4f3961998</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Set Comments Mandatory if Other is selected</sys_name>

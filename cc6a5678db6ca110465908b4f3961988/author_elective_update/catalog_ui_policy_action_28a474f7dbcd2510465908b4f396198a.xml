@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="WorkJam User Profile Change (internal)">29be247fdb8d2510465908b4f396195e</catalog_item>
+        <catalog_variable>IO:a7be28ffdb8d2510465908b4f39619ba</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>200</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-02-23 00:35:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>28a474f7dbcd2510465908b4f396198a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requested_for_team_member_name</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_28a474f7dbcd2510465908b4f396198a</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-02-23 00:35:33</sys_updated_on>
+        <table/>
+        <ui_policy display_value="If Store is selected">d674b0f7dbcd2510465908b4f3961995</ui_policy>
+        <variable>requested_for_team_member_name</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</application>
+        <file_path/>
+        <instance_id>969d0382db72fac00e785d00cf961913</instance_id>
+        <instance_name>apinet</instance_name>
+        <name>catalog_ui_policy_action_28a474f7dbcd2510465908b4f396198a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="WorkJam User Profile Change (internal)">29be247fdb8d2510465908b4f396195e</catalog_item><catalog_variable>IO:a7be28ffdb8d2510465908b4f39619ba</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>true</mandatory><order>200</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>Paulus.Wongko@api.net.au</sys_created_by><sys_created_on>2023-02-23 00:35:33</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>28a474f7dbcd2510465908b4f396198a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>requested_for_team_member_name</sys_name><sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope><sys_update_name>catalog_ui_policy_action_28a474f7dbcd2510465908b4f396198a</sys_update_name><sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by><sys_updated_on>2023-02-23 00:35:33</sys_updated_on><table/><ui_policy display_value="If Store is selected">d674b0f7dbcd2510465908b4f3961995</ui_policy><variable>requested_for_team_member_name</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>681854769</payload_hash>
+        <record_name>requested_for_team_member_name</record_name>
+        <reverted_from/>
+        <source>bb0b4a3987de61d051cdcae20cbb3541</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-04-20 05:03:52</sys_created_on>
+        <sys_id>402b8e3987de61d051cdcae20cbb3550</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1879d0c277f0000001</sys_recorded_at>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-04-20 05:04:54</sys_updated_on>
+        <type>Catalogue UI Policy Action</type>
+        <update_guid>7ba474f792cd2510bf174227fa9f8554</update_guid>
+        <update_guid_history>7ba474f792cd2510bf174227fa9f8554:681854769</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f9c41e318752a1d051cdcae20cbb35e5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-04-20 05:46:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>b38801ec7b274c9a9c35915e052293a1</sys_id>
+        <sys_metadata>28a474f7dbcd2510465908b4f396198a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requested_for_team_member_name</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_scope_delete display_value="">1f311dcb338447a88b25137862d99590</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_28a474f7dbcd2510465908b4f396198a</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_28a474f7dbcd2510465908b4f396198a">402b8e3987de61d051cdcae20cbb3550</sys_update_version>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-04-20 05:46:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

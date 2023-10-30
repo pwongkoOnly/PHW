@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>100</order>
+        <sc_cat_item display_value="Activation Email">da2d1a3cdb6ca110465908b4f39619d4</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-01-20 04:08:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ba6f1ebcdb6ca110465908b4f3961917</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Requestor.Activation Email</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>io_set_item_ba6f1ebcdb6ca110465908b4f3961917</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-01-20 04:08:44</sys_updated_on>
+        <variable_set display_value="Requestor">4806251c87586550a50e74497bbb3584</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</application>
+        <file_path/>
+        <instance_id>969d0382db72fac00e785d00cf961913</instance_id>
+        <instance_name>apinet</instance_name>
+        <name>io_set_item_ba6f1ebcdb6ca110465908b4f3961917</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>100</order><sc_cat_item display_value="Activation Email">da2d1a3cdb6ca110465908b4f39619d4</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>Paulus.Wongko@api.net.au</sys_created_by><sys_created_on>2023-01-20 04:08:44</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>ba6f1ebcdb6ca110465908b4f3961917</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Requestor.Activation Email</sys_name><sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope><sys_update_name>io_set_item_ba6f1ebcdb6ca110465908b4f3961917</sys_update_name><sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by><sys_updated_on>2023-01-20 04:08:44</sys_updated_on><variable_set display_value="Requestor">4806251c87586550a50e74497bbb3584</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>1672205163</payload_hash>
+        <record_name>Requestor.Activation Email</record_name>
+        <reverted_from/>
+        <source>bd39423587de61d051cdcae20cbb3520</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-04-20 04:55:42</sys_created_on>
+        <sys_id>2849c23587de61d051cdcae20cbb3564</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1879d04af280000001</sys_recorded_at>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-04-20 04:56:22</sys_updated_on>
+        <type>Catalogue Variable Set</type>
+        <update_guid>be6f12fc1b6ca11080aa8e5884dcb0cd</update_guid>
+        <update_guid_history>be6f12fc1b6ca11080aa8e5884dcb0cd:1672205163</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">0e49463587de61d051cdcae20cbb35d5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-04-20 04:55:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>c04253f57a6f40bfb6b3bd82d1283391</sys_id>
+        <sys_metadata>ba6f1ebcdb6ca110465908b4f3961917</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requestor.Activation Email</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_scope_delete display_value="">1f311dcb338447a88b25137862d99590</sys_scope_delete>
+        <sys_update_name>io_set_item_ba6f1ebcdb6ca110465908b4f3961917</sys_update_name>
+        <sys_update_version display_value="io_set_item_ba6f1ebcdb6ca110465908b4f3961917">2849c23587de61d051cdcae20cbb3564</sys_update_version>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-04-20 04:55:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

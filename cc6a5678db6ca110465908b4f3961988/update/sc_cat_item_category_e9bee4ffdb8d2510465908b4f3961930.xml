@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Copy of WorkJam User Profile Change (external)">29be247fdb8d2510465908b4f396195e</sc_cat_item>
+        <sc_cat_item display_value="WorkJam User Profile Change (internal)">29be247fdb8d2510465908b4f396195e</sc_cat_item>
         <sc_category display_value="WorkJam">1daede3cdb6ca110465908b4f3961978</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>

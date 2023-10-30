@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
     <sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Copy of WorkJam Function">f4d6268fdbc9a110465908b4f3961944</sc_cat_item>
+        <sc_cat_item display_value="WorkJam Function">f4d6268fdbc9a110465908b4f3961944</sc_cat_item>
         <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
         <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
         <sys_created_on>2023-02-21 00:58:51</sys_created_on>

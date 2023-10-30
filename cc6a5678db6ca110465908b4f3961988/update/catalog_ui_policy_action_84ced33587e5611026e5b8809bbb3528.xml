@@ -22,7 +22,7 @@
         <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
         <sys_updated_on>2023-03-14 04:22:26</sys_updated_on>
         <table/>
-        <ui_policy display_value="If Store is selected">5d7211538791a11026e5b8809bbb3579</ui_policy>
+        <ui_policy display_value="">5d7211538791a11026e5b8809bbb3579</ui_policy>
         <variable>contact_email_address</variable>
         <variable_set/>
         <visible>true</visible>

@@ -32,7 +32,7 @@
         <sys_created_on>2023-02-21 10:15:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_domain_path/>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>52166453dbc1e110465908b4f39619cf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>If Add Location selected</sys_name>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="WorkJam Profile">b9ad8b6087b02910a50e74497bbb3517</catalog_item>
+        <catalog_variable>IO:3fe017a487b02910a50e74497bbb35d7</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>300</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-01-31 23:33:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1063db2887b02910a50e74497bbb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>new_position</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_1063db2887b02910a50e74497bbb3595</sys_update_name>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-01-31 23:33:07</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Show new position,  location and temporary permanent change">c903172887b02910a50e74497bbb35b4</ui_policy>
+        <variable>new_position</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</application>
+        <file_path/>
+        <instance_id>969d0382db72fac00e785d00cf961913</instance_id>
+        <instance_name>apinet</instance_name>
+        <name>catalog_ui_policy_action_1063db2887b02910a50e74497bbb3595</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="WorkJam Profile">b9ad8b6087b02910a50e74497bbb3517</catalog_item><catalog_variable>IO:3fe017a487b02910a50e74497bbb35d7</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>true</mandatory><order>300</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>Paulus.Wongko@api.net.au</sys_created_by><sys_created_on>2023-01-31 23:33:07</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>1063db2887b02910a50e74497bbb3595</sys_id><sys_mod_count>0</sys_mod_count><sys_name>new_position</sys_name><sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope><sys_update_name>catalog_ui_policy_action_1063db2887b02910a50e74497bbb3595</sys_update_name><sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by><sys_updated_on>2023-01-31 23:33:07</sys_updated_on><table/><ui_policy display_value="Show new position,  location and temporary permanent change">c903172887b02910a50e74497bbb35b4</ui_policy><variable>new_position</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-554182085</payload_hash>
+        <record_name>new_position</record_name>
+        <reverted_from/>
+        <source>bd39423587de61d051cdcae20cbb3520</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-04-20 04:55:41</sys_created_on>
+        <sys_id>9049c23587de61d051cdcae20cbb350b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1879d04aa920000001</sys_recorded_at>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-04-20 04:56:22</sys_updated_on>
+        <type>Catalogue UI Policy Action</type>
+        <update_guid>b2631f2882b0291010fdbe3b62444aaf</update_guid>
+        <update_guid_history>b2631f2882b0291010fdbe3b62444aaf:-554182085</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">1049c23587de61d051cdcae20cbb3542</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Paulus.Wongko@api.net.au</sys_created_by>
+        <sys_created_on>2023-04-20 04:55:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>0c09e717a2e049f29093896bc64254a4</sys_id>
+        <sys_metadata>1063db2887b02910a50e74497bbb3595</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>new_position</sys_name>
+        <sys_package display_value="WorkJam" source="x_aupi_workjam">cc6a5678db6ca110465908b4f3961988</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="WorkJam">cc6a5678db6ca110465908b4f3961988</sys_scope>
+        <sys_scope_delete display_value="">1f311dcb338447a88b25137862d99590</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_1063db2887b02910a50e74497bbb3595</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_1063db2887b02910a50e74497bbb3595">9049c23587de61d051cdcae20cbb350b</sys_update_version>
+        <sys_updated_by>Paulus.Wongko@api.net.au</sys_updated_by>
+        <sys_updated_on>2023-04-20 04:55:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -32,7 +32,7 @@
         <sys_created_on>2023-02-21 09:14:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_domain_path/>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>970858d3db81e110465908b4f39619b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>If Unable to assign/complete Task or Unable to assign/complete Training selected</sys_name>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
     <catalog_ui_policy_action action="INSERT_OR_UPDATE">
-        <catalog_item display_value="Copy of WorkJam User Profile Change (external)">29be247fdb8d2510465908b4f396195e</catalog_item>
+        <catalog_item display_value="WorkJam User Profile Change (internal)">29be247fdb8d2510465908b4f396195e</catalog_item>
         <catalog_variable>IO:fabe28ffdb8d2510465908b4f396193b</catalog_variable>
         <cleared>false</cleared>
         <disabled>ignore</disabled>
